@@ -14,7 +14,7 @@ pandas = "^2.2.3"
 
 
 [tool.poetry.group.dev.dependencies]
-pyqt5 = "^5.15.11"
+pyqt6 = "^6.8.1"
 
 [build-system]
 requires = ["poetry-core"]

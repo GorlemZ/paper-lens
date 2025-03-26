@@ -1,16 +1,15 @@
-from PyQt5.QtWidgets import (
+from PyQt6.QtWidgets import (
     QMainWindow,
     QVBoxLayout,
     QPushButton,
     QLabel,
     QWidget,
 )
-from PyQt5.QtCore import Qt
+from PyQt6.QtCore import Qt
 from .csv_input import CSVInputComponent
 from ..controller import Controller
 from app.logic.logger import QTextEditLogger
 import logging
-from PyQt5.QtCore import pyqtSignal
 
 
 class MainWindow(QMainWindow):
@@ -43,13 +42,13 @@ class MainWindow(QMainWindow):
 
         # Add title
         title = QLabel("Paper Lens")
-        title.setAlignment(Qt.AlignCenter)
+        title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         title.setStyleSheet("font-size: 24pt;")
         layout.addWidget(title)
 
         # Add info text
         info = QLabel("Welcome to Paper Lens!")
-        info.setAlignment(Qt.AlignCenter)
+        info.setAlignment(Qt.AlignmentFlag.AlignCenter)
         info.setStyleSheet("font-size: 14pt;")
         layout.addWidget(info)
 
@@ -67,7 +66,7 @@ class MainWindow(QMainWindow):
 
         # Add log text box
         self.log_display = QLabel("Logs will appear here...")
-        self.log_display.setAlignment(Qt.AlignLeft)
+        self.log_display.setAlignment(Qt.AlignmentFlag.AlignLeft)  # Change this line
         self.log_display.setStyleSheet(
             "background-color: #f0f0f0; padding: 10px; font-family: monospace;"
         )

@@ -22,8 +22,8 @@ def main():
     logging.info("Application starting")
 
     try:
-        # Import PyQt5
-        from PyQt5.QtWidgets import QApplication, QMessageBox
+        # Import PyQt6
+        from PyQt6.QtWidgets import QApplication, QMessageBox
         from app.interface import MainWindow
 
         app = QApplication(sys.argv)
@@ -35,7 +35,7 @@ def main():
         logging.info("GUI components created, starting main loop")
 
         # Start the event loop
-        sys.exit(app.exec_())
+        sys.exit(app.exec())
 
     except Exception as e:
         logging.error(f"Error in main: {e}", exc_info=True)

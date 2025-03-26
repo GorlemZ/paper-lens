@@ -1,6 +1,6 @@
 import logging
 from pathlib import Path
-from PyQt5.QtCore import QObject, pyqtSlot
+from PyQt6.QtCore import QObject, pyqtSlot
 from app.logic.file_manager import FileManager
 from app.logic.spacy_task import extract_keys
 from pandas import DataFrame
