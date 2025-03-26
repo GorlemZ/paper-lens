@@ -34,7 +34,7 @@ venv.bak/
 dist/
 build/
 *.manifest
-*.spec
+
 
 # IDE files
 .idea/
